@@ -18,9 +18,15 @@ Book.prototype.getAge = function(){
 	return `'${this.title}' is ${years} years old!`;
 }
 
+//Revise book
+Book.prototype.revise = function(newYear){
+	this.year = newYear;
+	this.revised = true;
+}
 
 const book1 = new Book("Book one", "Lawan Austin", "1973");
 const book2 = new Book("Book two", "Laiven Desmon", "1965");
 
-console.log(book1.getSummary());
-console.log(book1.getAge());
+console.log(book1);
+book1.revise(1982);
+console.log(book1);
