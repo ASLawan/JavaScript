@@ -20,6 +20,10 @@ class Book {
 		this.year = newYear;
 		this.revised = true;
 	}
+
+	static bestSeller(){
+		return "'The art of not giving up By Lawan Austin'";
+	}
 }
 
 //Instantiate objects
@@ -29,4 +33,6 @@ console.log(book1);
 console.log("");
 book1.revise(1990);
 console.log(book1);
+console.log("");
+console.log(Book.bestSeller());
 

@@ -22,8 +22,11 @@ class Student {
 		this.option = newOption;
 		this.optionChanged = true;
 	}
-
-
+	
+	static programName(){
+		return "ALX 12 Months Software Engineering ";
+	}
+	
 }
 
 const student1 = new Student("Austin", "Lawan", "Software Engineering", 2, 1993);
@@ -32,5 +35,7 @@ console.log(student1);
 console.log("");
 console.log(student1.introduceStudent());
 student1.changeOption("DevOps Engineering");
-console.log("")
+console.log("");
 console.log(student1.introduceStudent());
+console.log("");
+console.log(Student.programName());
